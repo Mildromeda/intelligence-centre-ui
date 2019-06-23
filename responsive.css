@@ -1,0 +1,255 @@
+/*========================
+RESPONSIVE STYLES
+=======================*/
+
+@media only screen and (max-width:1300px){
+    .mordor_container{
+        width: 80%;
+    }
+
+    .nav_wrapper img{
+        max-width: 90%;
+    }
+
+    .nav_wrapper .navbar_right{
+        flex: 0 0 75%;
+    max-width: 75%;
+    }
+}
+
+@media only screen and (max-width:1110px){
+    .mordor_container{
+        width: 90%;
+    }
+
+    .nav_wrapper{
+        flex-wrap: wrap;
+    }
+
+    .nav_wrapper .navbar_right{
+        flex: 0 0 99%;
+    max-width: 99%;
+    }
+
+    .additives_section .additives_right_content{
+        flex-wrap: wrap;
+}
+  
+}
+
+@media only screen and (max-width:991px){
+    .mordor_container{
+        width: 90%;
+    }
+
+    .nav_wrapper .navbar_right{
+        flex: 0 0 99%;
+        max-width: 99%;
+    }
+
+    .tabs_section{
+        padding: 0.4rem 0;
+    }
+
+    .tabs{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter_section *{
+        font-size: 0.8rem;
+    }
+
+    .filter_section{
+        padding: 0.4rem 0;
+    }
+
+    .filter{
+        flex-wrap: wrap;
+        height: 80px;
+    }
+
+    .filter_left{
+        justify-content: center;
+        align-items: center;
+        max-width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+    .filter_right{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .select-selected:after{
+            top: 12px;
+        }
+
+        .additives_section .additives_menu_left{
+            top: 25%;
+        }
+
+}
+
+@media only screen and (max-width:767px){
+    .mordor_container{
+        width: 95%;
+    }
+
+    .nav_wrapper a{
+        margin: 0.2rem auto;
+    }
+
+    .nav_wrapper .navbar_right *{
+        font-size: 0.8rem;
+    }
+
+    .nav_wrapper .select .custom-select .select-selected{
+    font-size: 0.8rem;
+}
+
+.nav_wrapper .select .custom-select .select-selected::after{
+    top: 11px;
+}
+
+.search_wrapper .search_wrapper_right{
+    flex: 0 0 65%;
+    max-width: 65%;
+}
+
+    .search_wrapper{
+        height: 40px;
+    }
+
+    .search_wrapper h2{
+        font-size: 0.9rem;
+    }
+
+    .tabs_section{
+        padding: 0.2rem 0;
+    }
+
+    .tabs_section .tabs{
+        flex-wrap: wrap;
+        height: 55px;
+    }
+
+    .filter{
+        height: 105px;
+    }
+    .filter_section{
+        padding: 0;
+    }
+
+    .filter_right{
+        /* flex-wrap: nowrap; */
+        flex-wrap: wrap;
+    }
+
+    .filter_left{
+        max-width: 40%;
+    }
+
+    .additives_section .additives_menu_right{
+        padding-left: 10px;
+    }
+
+    .additives_section .additives_menu_left{
+        padding-right: 10px;
+    }
+
+    .additives_section .additives_right_content{
+        flex-direction: column;
+    }
+
+  
+
+    .additives_section .additives_right_content .content-1{
+        flex: 1;
+        max-width: 100%;
+    }
+
+    .additives_section .additives_right_content .content-2{
+        flex: 1;
+        max-width: 100%;
+    }
+
+    .fa-filter:before {
+        display: none;
+    }
+
+    .filter_right{
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:600px){
+
+.nav_wrapper{
+    height: 173px;
+}
+.nav_wrapper .navbar_right{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_wrapper .navbar_right li{
+    margin: 0.4rem 0;
+}
+
+.nav_wrapper .navbar_right .hamburger{
+    display: none;
+}
+
+
+.additives_section .additives_menu_left {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.additives_section .additives_menu_right{
+    padding-left: 10px;
+}
+
+.button{
+    margin-top: 0;
+    padding:0.5rem 0.5rem 0.5rem 0;
+}
+
+.select-items div,.select-selected {
+    padding: 4px;
+}
+
+input[type='radio']{
+    width: 12px;
+    height: 12px;
+}
+
+.radio-button{
+    margin-left: 20px;
+}
+
+.radio-button__control{
+    margin-left: 5px;
+}
+
+.radio-button__label{
+    margin-right: 20px;
+}
+
+}
+
+@media only screen and (max-width:500px){
+
+    .additives_section .additives_menu_left {
+        padding-left: 0px;
+    }
+    .radio-button{
+        margin-left: 14px;
+    }
+}
+

@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+*:focus {outline:none}
+
+ul, button, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background: #eee;
+    height: auto;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+
+  img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.button{
+    background: none;
+    color: white;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-top: 1rem;
+    opacity: 1;
+}
+
+.button:hover{
+    opacity: 0.6;
+    transition: 0.5s ease;
+}
+
+.button .icon{
+    flex: 0 0 33%;
+    max-width: 33%;
+    background: #1b4450;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button .text{
+    flex: 0 0 67%;
+    max-width: 67%;
+    font-size: 0.8rem;
+    background: #5cc4c7;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .mordor_navbar{
+      background-color: #1b4450;
+  }
+
+  .mordor_container{
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .nav_wrapper{
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+  }
+
+  .nav_wrapper .select .custom-select .select-selected{
+    border: none !important;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+}
+
+.nav_wrapper .select .custom-select .select-selected::after{
+    border-color: white transparent transparent transparent;
+    top: 14px;
+}
+
+.nav_wrapper .select .custom-select .select-items{
+    background: #1b4450;
+}
+
+.nav_wrapper .select .custom-select .select-items>div{
+    border: none;
+    color: white;
+}
+
+  .nav-wrapper a{
+      display: flex;
+      align-items: center;
+  }
+
+  .nav_wrapper .navbar_right{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 0 0 65%;
+      max-width: 65%;
+  }
+
+  .nav_wrapper .navbar_right li:hover{
+      color: #c1dec7;
+  }
+
+  .nav_wrapper .navbar_right .hamburger>div{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+  }
+
+  .navbar_right li a{
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+
+  .search_section{
+    background: #F8F8FF;
+  }
+
+  .search_section p{
+      color: #1b4450;
+      font-size: 1.2rem;
+      font-weight: bold;
+  }
+
+  .search_wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+  }
+  
+  .searchContainer{
+      display: flex;
+      flex-direction: row;
+      background: transparent;
+  }
+
+  .searchContainer .searchIcon{
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      border: none;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  
+
+  .search_wrapper .search_wrapper_left{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .search_wrapper .search_wrapper_right{
+      display: flex;
+      flex: 0 0 50%;
+      max-width: 50%;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .search_wrapper .search_wrapper_left h2{
+      margin-left: 1rem;
+  }
+
+  .tabs_section{
+      background: white;
+      border-bottom: 1px solid #D7DBDD;
+  }
+
+  .tabs {
+    display: flex;
+    height: 50px;
+    align-items: flex-end;
+  }
+  
+    .tab {
+      cursor: pointer;
+      padding: 0px 8px;
+      margin: 0px 30px 0px 0px;
+      color: lightgrey;
+      font-size: 0.8rem;
+    }
+  
+    .tab.is-tab-selected {
+      color: #1b4450;
+      border-bottom: 2px solid #4EBBE4;
+    }
+
+    .filter_section{
+        border-bottom: 1px solid #D7DBDD;
+        background: white;
+        position: relative;
+    }
+
+    .filter{
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    .filter select{
+        background: transparent;
+        color: #1b4450;
+        font-size: 1rem;
+    }
+
+    .filter_left{
+        display: flex; 
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .filter_left .custom-select{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .filter_right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0 0 75%;
+        max-width: 0 0 75%;
+    }
+
+    input[type="radio"]{
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    .additives_section .additives{
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: nowrap; */
+    }
+
+    .additives_section .additives ul li{
+        margin-top: 1rem;
+    }
+
+.additives_section .additives_menu_left{
+display: flex;
+flex-direction: column;
+flex: 0 0 25%;
+max-width: 25%;
+padding-right: 20px;
+height: 66vh;
+min-height: 200px;
+/* overflow: auto; */
+position: -webkit-sticky;
+position: sticky;
+top: 22%;
+z-index: 1;
+}
+
+
+.additives_section .additives_menu_left h3{
+    padding: 0.4rem 0.4rem 0.4rem 0;
+    margin: 1rem 0;
+    color: #1b4450;
+}
+
+
+
+.additives_section .additives_menu_right{
+        padding-left: 20px;
+        border-left: 1px solid #D7DBDD;
+    }
+
+    .additives_section .additives_menu_right h3{
+        border-bottom: 1px solid #D7DBDD;
+        padding-bottom: 0.4rem;
+        margin: 1rem 0;
+        color: #1b4450;
+    }
+
+
+
+.additives_section .additives_right_content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+}
+
+.additives_section .additives_right_content .content-1{
+    flex: 0 0 48%;
+        max-width: 45%;
+}
+
+.additives_section .additives_right_content .content-2{
+    flex: 0 0 48%;
+    max-width: 45%;
+}
+
+.additives_section h4{
+    color: #1b4450;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1b4450;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    padding: 0.5rem 0.5rem 0.5rem 0;   
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: none;
+    color: #1b4450;
+  }
+  
+
+  .dropdown-container {
+    display: none;
+    background-color: none;
+  }
+  .fa-caret-down {
+    float: right;
+  }
+
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+
+  .input-field{
+    height: 40px;
+    width: 80%;
+    position: relative;
+  }
+
+  .input-field .btn-search{
+    width: 70px;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background: 0 0;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input-field input{
+    height: 100%;
+    border: 0;
+    background: transparent;
+    display: block;
+    width: 100%;
+    padding: 10px 32px 10px 64px;
+    font-size: 1rem;
+    color: #666;
+  }
+
+  button input{
+      overflow: visible;
+  }
+
+  ::placeholder { 
+    color: lightgray;
+    opacity: 1;
+  }
+
+
+  /* select dropdown */
+
+  .custom-select {
+    position: relative;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color:transparent;
+    
+  }
+  
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent black transparent;
+    top: 7px;
+  }
+  
+  .select-items div,.select-selected {
+    color: black;
+    padding: 4px 16px;
+    border: 1px solid black;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .select-items {
+    position: absolute;
+    background-color: transparent;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: white;
+  }
+  
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /* Scrollbar */
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0.5em; 
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #5cc4c7;
+    outline: 1px solid slategrey;
+    border-radius: 5px;
+  }
+
+  /* radio buttons*/
+
+
+  .radio-button {
+    cursor: pointer;
+  }
+  input[type=radio] {
+      box-sizing: border-box;
+      padding: 0;
+  }
+  
+  .radio-button__input {
+      opacity: 0;
+      position: absolute;
+  }
+  
+  .radio-button__control {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      /* margin-right: 12px; */
+      vertical-align: middle;
+      background-color: inherit;
+      color: #1b4450;
+      border: 2px solid #666;
+      border-radius: 24px;
+  }
+  
+  .radio-button__input:checked+.radio-button__control:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 10px;
+      height: 10px;
+      background-color: #1b4450;
+      border-radius: 12px;
+  }
+  
+  .radio-button__input:checked+.radio-button__control {
+      border-color: #1b4450;
+  }
+  
+  .radio-button__control {
+    transform: scale(0.75);
+  }
+
+  .radio-button__label{
+      text-align: center;
+  }
+
+  
