@@ -541,4 +541,26 @@ body::-webkit-scrollbar-track {
       text-align: center;
   }
 
-  
+  .mobile_section{
+    display: none;
+}
+
+#nav2 h3{
+    display: none;
+}
+
+.filter_left .fa-times{
+    display: none;
+}
+
+#nav1 .fa-times{
+    display: none;
+}
+
+.tabs_section .fa-caret-right{
+    display: none;
+}
+
+.tabs_section .fa-caret-left{
+    display: none;
+}

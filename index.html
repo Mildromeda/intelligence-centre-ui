@@ -21,7 +21,7 @@
       <nav class='mordor_navbar'>
         <div class='mordor_container'>
           <div class='nav_wrapper'>
-            <a href="https://www.mordorintelligence.com/" class="navbar_left">
+            <a href="https://www.google.com/" class="navbar_left">
               <img src="images/logo.png" alt="">
             </a>
             <ul class='navbar_right'>
@@ -82,7 +82,10 @@
 
       <section class='tabs_section'>
         <div class='mordor_container'>
-          <div class='tabs'>
+          <div class='go-left'>
+            <i class="fas fa-caret-left"></i>
+          </div>
+          <div class='tabs overflow-hidden'>
             <div class="tab is-tab-selected">Explore</div>
             <div class="tab">Data & Analysis</div>
             <div class="tab">Companies</div>
@@ -92,193 +95,100 @@
             <div class="tab">News</div>
             <div class="tab">Appendix</div>
           </div>
-        </div>
-      </section>
-
-      <section class='filter_section'>
-        <div class='mordor_container'>
-
-          <div class="filter">
-            <div class='filter_left'>
-              <label>Additive Type</label>
-
-              <div class="custom-select" style="width:100px;">
-                <select>
-                  <option value="0">All</option>
-                  <option value="1">Audi</option>
-                  <option value="2">BMW</option>
-                  <option value="3">Citroen</option>
-                  <option value="4">Ford</option>
-                </select>
-              </div>
-
-            </div>
-            <div class='filter_right'>
-              <i class="fas fa-filter"></i>
-              <label class="radio-button">
-                <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                <span class="radio-button__control"></span>
-                <span class="radio-button__label">Product Type</span>
-              </label>
-
-              <div class="custom-select" style="width:100px;">
-                <select>
-                  <option value="0">All</option>
-                  <option value="1">Audi</option>
-                  <option value="2">BMW</option>
-                  <option value="3">Citroen</option>
-                  <option value="4">Ford</option>
-                </select>
-              </div>
-
-              <label class="radio-button">
-                <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                <span class="radio-button__control"></span>
-                <span class="radio-button__label">Animal Type</span>
-              </label>
-
-              <div class="custom-select" style="width:100px;">
-                <select>
-                  <option value="0">All</option>
-                  <option value="1">Audi</option>
-                  <option value="2">BMW</option>
-                  <option value="3">Citroen</option>
-                  <option value="4">Ford</option>
-                </select>
-              </div>
-              <label class="radio-button">
-                <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                <span class="radio-button__control"></span>
-                <span class="radio-button__label">Country</span>
-              </label>
-
-              <div class="custom-select" style="width:100px;">
-                <select>
-                  <option value="0">All</option>
-                  <option value="1">Audi</option>
-                  <option value="2">BMW</option>
-                  <option value="3">Citroen</option>
-                  <option value="4">Ford</option>
-                </select>
-              </div>
-
-            </div>
+          <div class='go-right'>
+            <i class="fas fa-caret-right"></i>
           </div>
 
         </div>
-
       </section>
+
+      <!--Only for mobile-->
+      <section class='mobile_section'>
+        <div class='mordor_container'>
+          <div class='mobile_menu'>
+            <div class="hamburger1 close">
+              <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <div class="hamburger2 close">
+              <i class="fas fa-funnel-dollar fa-2x"></i>
+            </div>
+          </div>
+        </div>
+
     </div>
 
-    <section class='additives_section content'>
+    </section>
+    <!--Only for mobile-->
+
+    <section class='filter_section'>
       <div class='mordor_container'>
-        <div class='additives'>
-          <div class='additives_menu_left'>
-            <h3>All Additives</h3>
-            <div class="sidenav">
-              <b> <a href="#about">Scope</a></b>
-              <a href="#services">Overview</a>
-              <button class="dropdown-btn">
-                Dynamics
-                <i class="caret-icon fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-container">
-                <a href="#drivers">Drivers</a>
-                <a href="#restraints">Restraints</a>
-                <a href="#opportunities">Opportunities</a>
-                <a href="#porter">Porter's 5 Forces</a>
-              </div>
+
+        <div id='nav2' class="filter mobile_filter" class='visible'>
+          <div class='filter_left'>
+            <h3>Filters</h3>
+            <i class="fas fa-times fa-2x hamburger2 close"></i>
+            <div><label>Additive Type</label></div>
+
+            <div class="custom-select" style="width:100px;">
+              <select>
+                <option value="0">All</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Citroen</option>
+                <option value="4">Ford</option>
+              </select>
             </div>
-
-            <button class='button'>
-              <div class='icon'><i class="fas fa-arrow-down"></i></div>
-              <div class='text'>REPORT</div>
-            </button>
-
-            <button class='button'>
-              <div class='icon'><i class="fas fa-arrow-down"></i></div>
-              <div class='text'>TABLES</div>
-            </button>
-
 
           </div>
+          <div class='filter_right'>
+            <i class="fas fa-filter"></i>
+            <label class="radio-button">
+              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+              <span class="radio-button__control"></span>
+              <span class="radio-button__label">Product Type</span>
+            </label>
 
-
-
-          <div class='additives_menu_right'>
-            <h3>Drivers</h3>
-            <div class='additives_right_content'>
-              <div class='content-1'>
-                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit unde earum ratione ipsa. Qui, ab.</h4>
-                <article>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet minus ea deserunt sequi ad
-                  laudantium
-                  possimus non aut similique. Doloribus, est voluptates porro eum voluptate aliquid voluptatum
-                  deleniti
-                  nulla! Ad laborum incidunt quaerat, mollitia eum enim optio ex unde sed odit iure architecto,
-                  facere
-                  dolorum et pariatur impedit fugit commodi molestiae officia eos itaque nihil quod quidem
-                  cupiditate.
-                  Rem exercitationem eius a repellendus ab cupiditate quaerat earum, autem at ipsam deserunt
-                  accusantium
-                  soluta eligendi id odio cum beatae labore iure quidem! Ullam molestiae totam mollitia, iusto
-                  dolorem
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet minus ea deserunt sequi ad
-                  laudantium
-                  possimus non aut similique. Doloribus, est voluptates porro eum voluptate aliquid voluptatum
-                  deleniti
-                  nulla! Ad laborum incidunt quaerat, mollitia eum enim optio ex unde sed odit iure architecto,
-                  facere
-                  dolorum et pariatur impedit fugit commodi molestiae officia eos itaque nihil quod quidem
-                  cupiditate.
-                  Rem exercitationem eius a repellendus ab cupiditate quaerat earum, autem at ipsam deserunt
-                  accusantium
-                  soluta eligendi id odio cum beatae labore iure quidem! Ullam molestiae totam mollitia, iusto
-                  dolorem
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis est ut corrupti quidem! Esse
-                  accusantium
-                  commodi amet eveniet eaque. At, nulla! Adipisci, explicabo! Tempora esse voluptatum similique
-                  sapiente
-                  laudantium saepe, consectetur impedit soluta voluptas odio temporibus quaerat atque labore
-                  voluptate
-                  aperiam placeat maiores? Quo architecto dolor, iusto aut eius natus.
-                </article>
-              </div>
-
-              <div class='content-2'>
-                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit unde earum ratione ipsa. Qui, ab.</h4>
-                <article>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet minus ea deserunt sequi ad
-                  laudantium
-                  possimus non aut similique. Doloribus, est voluptates porro eum voluptate aliquid voluptatum
-                  deleniti
-                  nulla! Ad laborum incidunt quaerat, mollitia eum enim optio ex unde sed odit iure architecto,
-                  facere
-                  dolorum et pariatur impedit fugit commodi molestiae officia eos itaque nihil quod quidem
-                  cupiditate.
-                  Rem exercitationem eius a repellendus ab cupiditate quaerat earum, autem at ipsam deserunt
-                  accusantium
-                  soluta eligendi id odio cum beatae labore iure quidem! Ullam molestiae totam mollitia, iusto
-                  dolorem
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet minus ea deserunt sequi ad
-                  laudantium
-                  possimus non aut similique. Doloribus, est voluptates porro eum voluptate aliquid voluptatum
-                  deleniti
-                  nulla! Ad laborum incidunt quaerat, mollitia eum enim optio ex unde sed odit iure architecto,
-                  facere
-                  dolorum et pariatur impedit fugit commodi molestiae officia eos itaque nihil quod quidem
-                  cupiditate.
-                  Rem exercitationem eius a repellendus ab cupiditate quaerat earum, autem at ipsam deserunt
-                  accusantium
-                  soluta eligendi id odio cum beatae labore iure quidem! Ullam molestiae totam mollitia, iusto
-                  dolorem
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis est ut corrupti quidem! Esse
-                  accusantium
-
-                </article>
-              </div>
-
+            <div class="custom-select" style="width:100px;">
+              <select>
+                <option value="0">All</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Citroen</option>
+                <option value="4">Ford</option>
+              </select>
             </div>
+
+            <label class="radio-button">
+              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+              <span class="radio-button__control"></span>
+              <span class="radio-button__label">Animal Type</span>
+            </label>
+
+            <div class="custom-select" style="width:100px;">
+              <select>
+                <option value="0">All</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Citroen</option>
+                <option value="4">Ford</option>
+              </select>
+            </div>
+            <label class="radio-button">
+              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+              <span class="radio-button__control"></span>
+              <span class="radio-button__label">Country</span>
+            </label>
+
+            <div class="custom-select" style="width:100px;">
+              <select>
+                <option value="0">All</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Citroen</option>
+                <option value="4">Ford</option>
+              </select>
+            </div>
+
           </div>
         </div>
 
@@ -287,7 +197,108 @@
     </section>
   </div>
 
+  <section class='additives_section content'>
+    <div class='mordor_container'>
+      <div class='additives filter_additive_containerr'>
+        <div id='nav1' class='additives_menu_left mobile_filter' class='visible'>
+          <h3>All Additives</h3>
+          <i class="fas fa-times fa-2x hamburger1 close"></i>
+          <div class="sidenav">
+            <b> <a href="#about">Scope</a></b>
+            <a href="#services">Overview</a>
+            <button class="dropdown-btn">
+              Dynamics
+              <i class="caret-icon fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#drivers">Drivers</a>
+              <a href="#restraints">Restraints</a>
+              <a href="#opportunities">Opportunities</a>
+              <a href="#porter">Porter's 5 Forces</a>
+            </div>
+          </div>
+
+          <button class='button'>
+            <div class='icon'><i class="fas fa-arrow-down"></i></div>
+            <div class='text'>REPORT</div>
+          </button>
+
+          <button class='button'>
+            <div class='icon'><i class="fas fa-arrow-down"></i></div>
+            <div class='text'>TABLES</div>
+          </button>
+        </div>
+
+        <div class='additives_menu_right'>
+          <h3>Drivers</h3>
+          <div class='additives_right_content'>
+            <div class='content-1'>
+              <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit unde earum ratione ipsa. Qui, ab.</h4>
+              <article>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet minus ea deserunt sequi ad
+                laudantium
+                possimus non aut similique. Doloribus, est voluptates porro eum voluptate aliquid voluptatum
+                deleniti
+                nulla! Ad laborum incidunt quaerat, mollitia eum enim optio ex unde sed odit iure architecto,
+                facere
+                dolorum et pariatur impedit fugit commodi molestiae officia eos itaque nihil quod quidem
+                cupiditate.
+                Rem exercitationem eius a repellendus ab cupiditate quaerat earum, autem at ipsam deserunt
+                accusantium
+                soluta eligendi id odio cum beatae labore iure quidem! Ullam molestiae totam mollitia, iusto
+                dolorem
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet minus ea deserunt sequi ad
+                laudantium
+                possimus non aut similique. Doloribus, est voluptates porro eum voluptate aliquid voluptatum
+                deleniti
+                nulla! Ad laborum incidunt quaerat, mollitia eum enim optio ex unde sed odit iure architecto,
+                facere
+                dolorum et pariatur impedit fugit commodi molestiae officia eos itaque nihil quod quidem
+                cupiditate.
+                Rem exercitationem eius a repellendus ab cupiditate quaerat earum, autem at ipsam deserunt
+                accusantium
+                soluta eligendi id odio cum beatae labore iure quidem! Ullam molestiae totam mollitia, iusto
+                dolorem
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis est ut corrupti quidem! Esse
+                accusantium
+                commodi amet eveniet eaque. At, nulla! Adipisci, explicabo! Tempora esse voluptatum similique
+                sapiente
+                laudantium saepe, consectetur impedit soluta voluptas odio temporibus quaerat atque labore
+                voluptate
+                aperiam placeat maiores? Quo architecto dolor, iusto aut eius natus.
+              </article>
+            </div>
+
+            <div class='content-2'>
+              <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit unde earum ratione ipsa. Qui, ab.</h4>
+              <article>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet minus ea deserunt sequi ad
+                laudantium
+                possimus non aut similique. Doloribus, est voluptates porro eum voluptate aliquid voluptatum
+                deleniti
+                nulla! Ad laborum incidunt quaerat, mollitia eum enim optio ex unde sed odit iure architecto,
+                facere
+                dolorum et pariatur impedit fugit commodi molestiae officia eos itaque nihil quod quidem
+                cupiditate.
+                Rem exercitationem eius a repellendus ab cupiditate quaerat earum, autem at ipsam deserunt
+                accusantium Rem exercitationem eius a repellendus ab cupiditate quaerat earum, autem at ipsam deserunt
+                accusantium Rem exercitationem eius a repellendus ab cupiditate quaerat earum, autem at ipsam deserunt
+                accusantium
+
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  </div>
+
 </body>
+
 <script>
   var $tabs = $('.tabs .tab');
   $tabs.click(function (event) {
@@ -391,6 +402,37 @@
   document.addEventListener("click", closeAllSelect);
 </script>
 
+<script>
+  $(function () {
+    $('.hamburger1').on('click', function () {
+      $(this).toggleClass('close');
+      $('#nav1').toggleClass('visible');
+    });
+  });
+</script>
+
+<script>
+  $(function () {
+    $('.hamburger2').on('click', function () {
+      $(this).toggleClass('close');
+      $('#nav2').toggleClass('visible');
+    });
+  });
+</script>
+
+<script>
+  $('.go-right').click(function (event) {
+    var pos = $('div.overflow-hidden').scrollLeft() + 50;
+    $('div.overflow-hidden').scrollLeft(pos);
+  });
+</script>
+
+<script>
+  $('.go-left').click(function (event) {
+    var pos = $('div.overflow-hidden').scrollLeft() - 50;
+    $('div.overflow-hidden').scrollLeft(pos);
+  });
+</script>
 
 
 </html>
